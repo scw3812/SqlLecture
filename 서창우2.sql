@@ -87,4 +87,4 @@ FROM employees
 GROUP BY department_id
 HAVING AVG(salary) < 5000
 ORDER BY AVG(salary) DESC;
---order by에 여러 값을 줘서 차순위 기준을 정할 수 있다
+--order by에 여러 값을 줘서 차순위 기준을 정할 수 있다.
