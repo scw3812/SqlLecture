@@ -70,19 +70,19 @@ SELECT first_name, last_name, salary,
         DESC) 내년급여순위
 FROM employees;
 --15
-SELECT COUNT(min_salary)
+SELECT COUNT(*)
 FROM jobs;
 --16
 SELECT AVG(min_salary), MAX(min_salary), MIN(min_salary),
        AVG(max_salary), MAX(max_salary), MIN(max_salary)
 FROM jobs;
 --17
-SELECT department_id, COUNT(salary), AVG(salary)
+SELECT department_id, COUNT(*), AVG(salary)
 FROM employees
 GROUP BY department_id
 ORDER BY AVG(salary) DESC;
 --18
-SELECT department_id, COUNT(salary), AVG(salary)
+SELECT department_id, COUNT(*), AVG(salary)
 FROM employees
 GROUP BY department_id
 HAVING AVG(salary) < 5000
